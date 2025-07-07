@@ -1998,6 +1998,28 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 172.72 78.74)
+		(end 207.01 100.33)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 5ef6e73a-dec0-4caa-b0b1-9af8325dd3ba)
+	)
+	(text "OLED Display"
+		(exclude_from_sim no)
+		(at 188.722 76.962 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "829cc1c0-e26b-4c9d-809e-5bfcebb48889")
+	)
 	(wire
 		(pts
 			(xy 151.13 40.64) (xy 149.86 40.64)
@@ -2180,7 +2202,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 31.75) (xy 187.96 33.02)
+			(xy 179.07 16.51) (xy 179.07 17.78)
 		)
 		(stroke
 			(width 0)
@@ -2330,13 +2352,168 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 31.75) (xy 190.5 33.02)
+			(xy 181.61 16.51) (xy 181.61 17.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fd13364a-e1ed-481b-bb60-e069c11bd918")
+	)
+	(global_label "I2C_SDA"
+		(shape input)
+		(at 190.5 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1132f2a1-71bf-4477-a8c2-6cdfa99aff7a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 201.1052 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C_SCL"
+		(shape input)
+		(at 248.92 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a5963f61-7567-499b-bb67-f0dc24c82744")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 259.4647 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C_SCL"
+		(shape input)
+		(at 190.5 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bd9d86e0-f4ce-4aff-8c72-de2ba2686abf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 201.0447 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C_SDA"
+		(shape input)
+		(at 218.44 72.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ff892763-e603-48bc-a543-25c38677e4e1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 207.8348 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 190.5 90.17 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0134795e-08bc-4209-bdb6-f2f97e483d3f")
+		(property "Reference" "#PWR017"
+			(at 186.69 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 194.31 90.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 190.5 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f80b0e44-b794-462d-a1c7-2d57100ce8ce")
+		)
+		(instances
+			(project ""
+				(path "/becda20f-549d-4a05-8fab-c4435c8d8471"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:-24V")
@@ -2614,17 +2791,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+24V")
-		(at 187.96 31.75 90)
+		(lib_id "power:GND")
+		(at 190.5 87.63 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "588ab9d7-12b9-4783-9fae-632ad9d889af")
-		(property "Reference" "#PWR010"
-			(at 191.77 31.75 0)
+		(uuid "468c1ff0-8fce-4919-b96c-f07a36758482")
+		(property "Reference" "#PWR018"
+			(at 196.85 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2632,17 +2809,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+24V"
-			(at 184.15 31.7499 90)
+		(property "Value" "GND"
+			(at 194.31 87.6299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 187.96 31.75 0)
+			(at 190.5 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2651,7 +2828,74 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.96 31.75 0)
+			(at 190.5 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 190.5 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a5806d54-78be-47ab-8e52-7f789e36f33f")
+		)
+		(instances
+			(project ""
+				(path "/becda20f-549d-4a05-8fab-c4435c8d8471"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+24V")
+		(at 179.07 16.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "588ab9d7-12b9-4783-9fae-632ad9d889af")
+		(property "Reference" "#PWR010"
+			(at 182.88 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+24V"
+			(at 175.26 16.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2660,7 +2904,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 187.96 31.75 0)
+			(at 179.07 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2675,6 +2919,80 @@
 			(project ""
 				(path "/becda20f-549d-4a05-8fab-c4435c8d8471"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 185.42 92.71 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59a292b3-735e-42b9-abae-5f29212d13a4")
+		(property "Reference" "J6"
+			(at 186.055 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OLED Display I2C"
+			(at 186.055 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 185.42 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 185.42 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f5089f57-0559-49bb-909e-1160f1417cd7")
+		)
+		(pin "3"
+			(uuid "2e77b8b1-7523-48b6-9831-970fa4eb612e")
+		)
+		(pin "4"
+			(uuid "32ef1439-5807-4670-a0c1-37051e723628")
+		)
+		(pin "1"
+			(uuid "48b1883b-6145-4888-946e-3c8d5b0cecf5")
+		)
+		(instances
+			(project ""
+				(path "/becda20f-549d-4a05-8fab-c4435c8d8471"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -3921,7 +4239,7 @@
 	)
 	(symbol
 		(lib_id "power:-24V")
-		(at 190.5 31.75 270)
+		(at 181.61 16.51 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3930,7 +4248,7 @@
 		(fields_autoplaced yes)
 		(uuid "c88b2b72-da2c-4b68-a96e-f951c76f1ec1")
 		(property "Reference" "#PWR011"
-			(at 186.69 31.75 0)
+			(at 177.8 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3939,7 +4257,7 @@
 			)
 		)
 		(property "Value" "-24V"
-			(at 194.31 31.7499 90)
+			(at 185.42 16.5099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3948,7 +4266,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 31.75 0)
+			(at 181.61 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3957,7 +4275,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 31.75 0)
+			(at 181.61 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3966,7 +4284,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"-24V\""
-			(at 190.5 31.75 0)
+			(at 181.61 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4300,7 +4618,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 190.5 38.1 270)
+		(at 181.61 22.86 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4309,7 +4627,7 @@
 		(fields_autoplaced yes)
 		(uuid "f9e3681a-7d05-453e-88b2-b71e4a5b77c0")
 		(property "Reference" "J1"
-			(at 193.04 36.8299 90)
+			(at 184.15 21.5899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4318,7 +4636,7 @@
 			)
 		)
 		(property "Value" "24 Power Supply Input"
-			(at 193.04 39.3699 90)
+			(at 184.15 24.1299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4327,7 +4645,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 38.1 0)
+			(at 181.61 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4336,7 +4654,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 190.5 38.1 0)
+			(at 181.61 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4345,7 +4663,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 190.5 38.1 0)
+			(at 181.61 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
