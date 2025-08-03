@@ -2662,7 +2662,7 @@
 		)
 	)
 	(sheet
-		(at 20.32 39.37)
+		(at 140.97 45.72)
 		(size 54.61 26.67)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2678,7 +2678,7 @@
 		)
 		(uuid "a0e2c695-cc82-44ab-9230-b1138b9fd438")
 		(property "Sheetname" "MotorHandling"
-			(at 20.32 38.6584 0)
+			(at 140.97 45.0084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2687,7 +2687,7 @@
 			)
 		)
 		(property "Sheetfile" "Main.kicad_sch"
-			(at 20.32 66.6246 0)
+			(at 140.97 72.9746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
