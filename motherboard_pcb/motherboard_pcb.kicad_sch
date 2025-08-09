@@ -1134,7 +1134,7 @@
 					)
 				)
 				(pin power_in line
-					(at 15.24 -25.4 180)
+					(at 15.24 -22.86 180)
 					(length 5.08)
 					(name "GND"
 						(effects
@@ -1667,28 +1667,6 @@
 		)
 		(uuid "fd13364a-e1ed-481b-bb60-e069c11bd918")
 	)
-	(global_label "OE"
-		(shape input)
-		(at 218.44 59.69 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0f78f648-b73f-488d-82cb-4de1b3cb3158")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.9753 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "I2C_SDA"
 		(shape input)
 		(at 190.5 95.25 0)
@@ -1711,9 +1689,53 @@
 			)
 		)
 	)
-	(global_label "SRCLR"
+	(global_label "STP1"
 		(shape input)
-		(at 218.44 62.23 180)
+		(at 248.92 52.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "36274398-826b-4a67-abb9-22e9ddf0b343")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 256.5618 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SER"
+		(shape input)
+		(at 248.92 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3c19cf4e-db50-4383-bf2c-304c5d0ba36a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 255.5337 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "STP3"
+		(shape input)
+		(at 218.44 57.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1721,9 +1743,31 @@
 			)
 			(justify right)
 		)
-		(uuid "1300105c-b657-4b83-84c6-5d08eb9ae81d")
+		(uuid "66b09434-624c-424d-bfb7-c57df8a129b3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 209.4072 62.23 0)
+			(at 210.7982 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "STP4"
+		(shape input)
+		(at 218.44 59.69 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "67bd74d5-b382-49f7-9035-a67a062a596b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 210.7982 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1735,7 +1779,7 @@
 	)
 	(global_label "RCLK"
 		(shape input)
-		(at 248.92 59.69 0)
+		(at 248.92 57.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1745,7 +1789,7 @@
 		)
 		(uuid "68cc5ee3-fae6-4d17-b40e-ba7f3cc78e20")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.7433 59.69 0)
+			(at 256.7433 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1799,9 +1843,9 @@
 			)
 		)
 	)
-	(global_label "SRCLK"
+	(global_label "STP2"
 		(shape input)
-		(at 218.44 57.15 180)
+		(at 218.44 69.85 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1809,14 +1853,36 @@
 			)
 			(justify right)
 		)
-		(uuid "d4a7b923-c2f8-43c7-b7c4-737bc7574025")
+		(uuid "f4233976-c9ff-4a47-8d5e-1a93434022bf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 209.4072 57.15 0)
+			(at 210.7982 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SRCLK"
+		(shape input)
+		(at 248.92 59.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f5b0d455-7ebd-4a2b-83ee-5f3f1beacc49")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 257.9528 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2143,7 +2209,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:MODULE_ESP32_DEVKIT_V1"
+		(property "Footprint" "ESP32-DEVKIT-V1:MODULE_ESP32_DEVKIT_V1"
 			(at 233.68 52.07 0)
 			(effects
 				(font
